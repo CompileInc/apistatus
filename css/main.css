@@ -23,6 +23,8 @@
 .nav-pills>li>a:hover,
 .nav-pills>li>a:focus {
     border-radius: 0;
+    background: #e6e9ed;
+    color: #333
 }
 
 
