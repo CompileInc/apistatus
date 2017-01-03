@@ -2,6 +2,9 @@
 @import "//cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.min.css";
 @import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 
+body {
+    font-family: "Source Sans Pro", "Helvetica Neue", helvetica, arial, sans-serif
+}
 .navbar {
     background: #4a90e2;
     border-radius: 0;
