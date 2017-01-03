@@ -19,6 +19,12 @@
 .nav-pills>li.active>a:hover {
     background: #4a90e2;
 }
+.nav-pills>li>a,
+.nav-pills>li>a:hover,
+.nav-pills>li>a:focus {
+    border-radius: 0;
+}
+
 
 .notes h2 {
     font-size: 18px;
@@ -33,4 +39,7 @@
 }
 .tab-content {
     min-height: 250px;
+}
+.footer {
+    background: transparent;
 }
