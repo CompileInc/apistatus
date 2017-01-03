@@ -8,12 +8,12 @@ layout: default
                 <h2>What is this site?</h2>
                 <p>We continuously monitor the status of all Compile APIs. Any interruption will be noted down here.</p>
                 <h2>What are these graphs?</h2>
-                <p>The graphs are generated from <a href="https://updown.io" target="_blank">updown.io</a> from periodic checks on Compile APIs. They’re accurate to within a few minutes.</p>
+                <p>The graphs are generated based on periodic checks of Compile APIs. They’re accurate to within a few minutes.</p>
                 <hr />
             </div>
             <div class="row">
-            <div class="col-sm-10">
-                <ul class="nav nav-pills" id="statusTabs">
+            <div class="col-sm-4">
+                <ul class="nav nav-pills nav-justified" id="statusTabs">
                 {% for status in site.status_pages %}
                   <li{% if forloop.first == true %} class="active"{% endif %}>
                     <a href="#{{status.key}}" data-toggle="tab">{{ status.title }}</a>
@@ -21,7 +21,7 @@ layout: default
                 {% endfor %}
                 </ul>
             </div>
-            <div class="col-sm-2 text-right">
+            <div class="col-sm-2 col-sm-offset-6 text-right">
                 <a class="btn btn-default refresh-status" data-toggle="tooltip" data-placement="left" title="Refresh status">
                     <i class="fa fa-refresh"></i>
                 </a>

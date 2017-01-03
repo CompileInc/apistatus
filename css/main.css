@@ -3,7 +3,8 @@
 @import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 
 body {
-    font-family: "Source Sans Pro", "Helvetica Neue", helvetica, arial, sans-serif
+    font-family: "Source Sans Pro", "Helvetica Neue", helvetica, arial, sans-serif;
+    background-color: #f9f9f9;
 }
 .navbar {
     background: #4a90e2;
@@ -29,15 +30,18 @@ body {
     background: #e6e9ed;
     color: #333
 }
-
+.btn {
+    border-radius: 0;
+}
 
 .notes h2 {
     font-size: 18px;
+    color: #bbb;
     padding: 3px 0;
     border-bottom: 1px solid #eee;
 }
 .notes p {
-    font-size: 12px;
+    color: #bbb;
 }
 .help-text {
     color: #eee;
