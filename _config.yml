@@ -22,9 +22,9 @@ exclude: [vendor]
 gems: [jekyll-paginate]
 status_pages:
     - key: apiv1
-      url: /comingsoon
       title: API v1
+      target: comingsoon
     - key: apiv2
-      url: /comingsoon
       title: API v2
+      target: comingsoon
 

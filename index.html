@@ -35,7 +35,11 @@ layout: default
             <div class="tab-content">
               {% for status in site.status_pages %}
               <div class="tab-pane{% if forloop.first == true %} active{% endif %}" id="{{status.key}}">
-                  <iframe width="100%" frameborder="" =0 src="{{status.url}}" target="_parent" onload="resizeIframe(this)"></iframe>
+                {% if status.target == "comingsoon" %}
+                <h2 class="help-text text-center">Coming soon..</h2>
+                {% else %}
+                  <iframe width="100%" frameborder="" =0 src="{{status.target}}" target="_parent" onload="resizeIframe(this)"></iframe>
+                {% endif %}
               </div>
               {% endfor %}
             </div>
