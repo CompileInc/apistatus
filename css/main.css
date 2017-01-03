@@ -1,0 +1,36 @@
+@import "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css";
+@import "//cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.min.css";
+@import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.navbar {
+    background: #4a90e2;
+    border-radius: 0;
+}
+.navbar-brand {
+    display:inline-block;
+    width:100px;
+    margin-bottom: 5px;
+}
+.navbar-brand svg {
+    width: 100px;
+}
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    background: #4a90e2;
+}
+
+.notes h2 {
+    font-size: 18px;
+    padding: 3px 0;
+    border-bottom: 1px solid #eee;
+}
+.notes p {
+    font-size: 12px;
+}
+.help-text {
+    color: #eee;
+}
+.tab-content {
+    min-height: 250px;
+}

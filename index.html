@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div class="notes">
+                <h2>What is this site?</h2>
+                <p>We continuously monitor the status of Compile all compile APIs. Any interruption will be noted down here.</p>
+                <h2>What are these graphs?</h2>
+                <p>The graphs are generated from periodic checks on Compile APIs. They’re accurate to within a few minutes.</p>
+                <hr />
+            </div>
+
+            <ul class="nav nav-pills nav-justified" id="statusTabs">
+            {% for status in site.status_pages %}
+              <li{% if forloop.first == true %} class="active"{% endif %}>
+                <a href="#{{status.key}}" data-toggle="tab">{{ status.title }}</a>
+              </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">            
+            <div class="tab-content">
+              {% for status in site.status_pages %}
+              <div class="tab-pane{% if forloop.first == true %} active{% endif %}" id="{{status.key}}">
+                  <iframe width="100%" frameborder="" =0 src="{{status.url}}" target="_parent" onload="resizeIframe(this)"></iframe>
+              </div>
+              {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
