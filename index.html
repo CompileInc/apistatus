@@ -11,7 +11,13 @@ layout: default
                 <p>The graphs are generated from <a href="https://updown.io">updown.io</a> from periodic checks on Compile APIs. They’re accurate to within a few minutes.</p>
                 <hr />
             </div>
+        </div>
+    </div>
+</div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
             <ul class="nav nav-pills nav-justified" id="statusTabs">
             {% for status in site.status_pages %}
               <li{% if forloop.first == true %} class="active"{% endif %}>
