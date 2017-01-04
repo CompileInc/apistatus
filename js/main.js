@@ -1,4 +1,5 @@
 var updateStatusPages = function() {
+    $(".load-img").show();
     $("iframe.status_page").each(function() { 
         var src= $(this).attr('src');
         $(this).attr('src',src);  
@@ -13,7 +14,4 @@ $(function(){
     if (url.match('#')) {
         $('.nav-pills a[href="#' + url.split('#')[1] + '"]').tab('show');
     }
-    // $('.nav-pills a').on('shown.bs.tab', function (e) {
-    //     window.location.hash = e.target.hash;
-    // })
 });
