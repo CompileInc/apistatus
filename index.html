@@ -39,7 +39,7 @@ layout: default
                 {% if status.target == "comingsoon" %}
                 <h2 class="help-text text-center">Coming soon..</h2>
                 {% else %}
-                  <iframe class="status_page" width="100%" frameborder="" =0 src="https://updown.io/{{ status.target }}" target="_parent" onload="resizeIframe(this)"></iframe>
+                  <iframe class="status_page" width="100%" height="1585px" frameborder="" =0 src="https://updown.io/{{ status.target }}" target="_parent" onload="resizeIframe(this)"></iframe>
                 {% endif %}
               </div>
               {% endfor %}
