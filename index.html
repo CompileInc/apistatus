@@ -33,8 +33,8 @@ layout: default
                 {% if status.target == "comingsoon" %}
                 <h2 class="help-text text-center">Coming soon..</h2>
                 {% else %}
-                  <div id="load-img" class="text-center">Loading..</div>
-                  <iframe class="status_page" width="100%" height="1435px" frameborder="0" src="https://updown.io/{{ status.target }}" target="_parent" onload="resizeIframe(this)"></iframe>
+                  <div id="load-img-{{status.key}}" class="text-center">Loading..</div>
+                  <iframe class="status_page" width="100%" height="1435px" frameborder="0" src="https://updown.io/{{ status.target }}" target="_parent" onload="document.getElementById('load-img-{{status.key}}').style.display='none';"></iframe>
                 {% endif %}
               </div>
               {% endfor %}
