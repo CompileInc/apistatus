@@ -1,4 +1,5 @@
 var resizeIframe = function(obj) {
+    document.getElementById('load-img').style.display='none';
     obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
 };
 var updateStatusPages = function() {
