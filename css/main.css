@@ -36,12 +36,8 @@ body {
 
 .notes h2 {
     font-size: 18px;
-    color: #bbb;
     padding: 3px 0;
     border-bottom: 1px solid #eee;
-}
-.notes p {
-    color: #bbb;
 }
 .help-text {
     color: #eee;
