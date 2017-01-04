@@ -7,7 +7,7 @@ body {
     background-color: #f9f9f9;
 }
 .navbar {
-    background: #4a90e2;
+    background: #e6e9ed;
     border-radius: 0;
 }
 .navbar-brand {
@@ -21,7 +21,7 @@ body {
 .nav-pills>li.active>a,
 .nav-pills>li.active>a:focus,
 .nav-pills>li.active>a:hover {
-    background: #4a90e2;
+    background: #5c4;
 }
 .nav-pills>li>a,
 .nav-pills>li>a:hover,
@@ -35,9 +35,15 @@ body {
 }
 
 .notes h2 {
+    margin-top: 10px;
     font-size: 18px;
-    padding: 3px 0;
     border-bottom: 1px solid #eee;
+}
+.notes-modal-button {
+    margin: 12px 0;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
 }
 .help-text {
     color: #eee;
