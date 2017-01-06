@@ -11,6 +11,7 @@ email: support@compile.com
 description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://status.compile.com" # the base hostname & protocol for your site
+homepage: "https://www.compile.com"
 name: Compile
 
 twitter_username: CompileInc
